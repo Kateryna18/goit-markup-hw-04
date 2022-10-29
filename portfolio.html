@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -19,19 +22,36 @@
       <div class="header-container container">
         <nav class="main-nav">
           <a href="./index.html" class="logo">
-            <span class="first-part">Web</span><span class="second-part">Studio</span>
+            <span class="first-part">Web</span
+            ><span class="second-part">Studio</span>
           </a>
           <ul class="site-nav">
-            <li class="site-nav-items"><a href="./index.html" class="link">Студія</a></li>
-            <li class="site-nav-items"><a href="" class="link current">Портфоліо</a></li>
+            <li class="site-nav-items">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="site-nav-items">
+              <a href="" class="link current">Портфоліо</a>
+            </li>
             <li class="site-nav-items"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav-items">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="auth-nav-icons" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              <span class="contact-text">info@devstudio.com</span>
+            </a>
           </li>
-          <li class="auth-nav-items"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li class="auth-nav-items">
+            <a href="tel:+380961111111" class="link">
+              <svg class="auth-nav-icons" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
+              <span class="contact-text">+38 096 111 11 11</span>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -62,13 +82,15 @@
             <li class="item">
               <a href="" class="item-link">
                 <div class="card-thumb">
-                  <img src="./images/websitetehnokruk.jpg" alt="веб-сайт технокряк" />
+                  <img
+                    src="./images/websitetehnokruk.jpg"
+                    alt="веб-сайт технокряк"
+                  />
                 </div>
                 <div class="card-content">
                   <h2 class="item-title">Технокряк</h2>
                   <p class="text">Веб-сайт</p>
                 </div>
-                  
               </a>
             </li>
             <li class="item">
@@ -96,7 +118,10 @@
             <li class="item">
               <a href="" class="item-link">
                 <div class="card-thumb">
-                  <img src="./images/marketingproject.jpg" alt="маркетинг проект Prime" />
+                  <img
+                    src="./images/marketingproject.jpg"
+                    alt="маркетинг проект Prime"
+                  />
                 </div>
                 <div class="card-content">
                   <h2 class="item-title">Проєкт Prime</h2>
@@ -107,7 +132,10 @@
             <li class="item">
               <a href="" class="item-link">
                 <div class="card-thumb">
-                  <img src="./images/boxesapp.jpg" alt="додаток проекту Boxes" />
+                  <img
+                    src="./images/boxesapp.jpg"
+                    alt="додаток проекту Boxes"
+                  />
                 </div>
                 <div class="card-content">
                   <h2 class="item-title">Проєкт Boxes</h2>
@@ -140,7 +168,10 @@
             <li class="item">
               <a href="" class="item-link">
                 <div class="card-thumb">
-                  <img src="./images/marketinglab.jpg" alt="маркетинг проект LAB" />
+                  <img
+                    src="./images/marketinglab.jpg"
+                    alt="маркетинг проект LAB"
+                  />
                 </div>
                 <div class="card-content">
                   <h2 class="item-title">Проєкт LAB</h2>
@@ -166,25 +197,63 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo">
-          <span class="first-part">Web</span><span class="second-variant">Studio</span>
-        </a>
-        <address class="adress">
-          <ul class="adress-list">
-            <li class="adress-list-item">
-              <a href="https://goo.gl/maps/c7woirHpgmud5ky19" target="_blank" rel="noreferrer noopener" class="link">м.
-                Київ,
-                пр-т Лесі Українки, 26</a>
+      <div class="container footer-container">
+        <div class="footer-container-adress">
+          <a href="./index.html" class="footer-logo">
+            <span class="first-part">Web</span><span class="second-variant">Studio</span>
+          </a>
+          <address class="adress">
+            <ul class="adress-list">
+              <li class="adress-list-item">
+                <a href="https://goo.gl/maps/c7woirHpgmud5ky19" target="_blank" rel="noreferrer noopener" class="link">м.
+                  Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="adress-list-item">
+                <a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a>
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-container-socials-links">
+          <h3 class="socials-links-title">приєднуйтесь</h3>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="footer-socials-link" href="https://www.instagram.com/" target="_blank"
+                rel="nofollow noopener noreferrer" aria-label="instagram">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram-2"></use>
+                </svg>
+              </a>
             </li>
-            <li class="adress-list-item">
-              <a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a>
+            <li class="socials-item">
+              <a class="footer-socials-link" href="https://twitter.com/" target="_blank" rel="nofollow noopener noreferrer"
+                aria-label="twitter">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter-1"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a>
+            <li class="socials-item">
+              <a class="footer-socials-link" href="https://uk-ua.facebook.com/" target="_blank"
+                rel="nofollow noopener noreferrer" aria-label="facebook">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="footer-socials-link" href="https://ua.linkedin.com/" target="_blank"
+                rel="nofollow noopener noreferrer" aria-label="linkedin">
+                <svg class="footer-socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
